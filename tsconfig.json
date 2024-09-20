@@ -5,6 +5,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+
+    /* Support for svg */
+    "types": ["vite-plugin-svgr/client"]
   }
 }

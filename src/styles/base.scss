@@ -1,6 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+// 通用设置
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+// 内容区两边留白120px
+#root {
+  display: flex;
+  flex-direction: column;
+  padding: 0 120px;
+  overflow: auto;
+}
+
+/* 拓展基础样式 */
+
+// flex水平垂直居中对齐
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+// flex主轴居中对齐
+.flex-horizontal-center {
+  @apply flex justify-center;
+}
+
+// flex交叉轴居中对齐
+.flex-vertical-center {
+  @apply flex items-center;
+}
 
 @layer base {
   :root {
